@@ -17946,10 +17946,18 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+.logo-bits{
+position: absolute; 
+filter: invert(1); 
+top:-30px;
+}
+
 /*          Changes for small display      */
 
-
 @media (max-width: 991px) {
+  body{
+    overflow: hidden;
+  }
   .form-group textarea {
     padding-top: 15px;
   }
@@ -17968,8 +17976,8 @@ Copyright (c) 2015 Daniel Eden
     float:none !important;
   }
   .logo-bits{
-    width: 200px !important;
-    height:200px !important;
+    max-width: 150px;
+    max-height:150px;
     top: 10px !important;
     left: 20px !important;
   }
