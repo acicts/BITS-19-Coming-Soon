@@ -17953,6 +17953,12 @@ top:-30px;
 }
 
 /*          Changes for small display      */
+@media (max-width: 400px) {
+  .comes{
+    width:100% !important;
+    left:-100px !important;
+  }
+}
 
 @media (max-width: 991px) {
   body{
@@ -17965,8 +17971,9 @@ top:-30px;
     position: initial;
   }
   .comes{
-    left:-300px !important;
+    left:-300px  !important;
     transition: 1s;
+    width:400px;
   }
   .comes:hover{
     left:-10px !important;
@@ -17980,6 +17987,7 @@ top:-30px;
     max-height:150px;
     top: 10px !important;
     left: 20px !important;
+    transition: 1s;
   }
   .secyear{
     background-color: rgba(255, 5, 5, 0.404);
