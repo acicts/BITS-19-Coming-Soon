@@ -17959,8 +17959,8 @@ top:-30px;
 /*          Changes for small display      */
 @media (max-width: 700px) {
   .comes{
-    width:70% !important;
-    left:-60% !important;
+    width:90% !important;
+    left:-75% !important;
   }
 }
 
