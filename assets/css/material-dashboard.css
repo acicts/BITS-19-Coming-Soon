@@ -17948,7 +17948,11 @@ Copyright (c) 2015 Daniel Eden
 
 .logo-bits{
 position: absolute;
-filter: invert(1);
+-webkit-filter: invert(100%);
+-moz-filter: invert(100%);
+-ms-filter: invert(100%);
+-o-filter: invert(100%);
+filter: invert(100%);
 top:-30px;
 }
 
