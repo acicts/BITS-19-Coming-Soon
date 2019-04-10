@@ -12,11 +12,10 @@
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
 
@@ -51,19 +50,18 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <div class="card comes" id="" style="width: 24rem; position: absolute; left:-10px; bottom:40px; z-index: 5;">
+  <div class="card comes" id="" style="width:40%; position: absolute; bottom:40px; left:-10px; transition: 1s; z-index: 5;">
     <div class="card-body">
       <h4 class="card-title"  style="color: #b5caff">Coming Soon</h4>
-      <h2 class="card-text"><div id="demo" style="font-family:'Saira', sans-serif;  color: #b5caff"></div></h2>
-
-      <i class="material-icons" style="font-size: 50px; float: right; position: absolute; right:2px; padding-left:10px; top:1px; color: #fff">
+      <div class="card-text" style="font-size:200%;"><div id="demo" style="font-family:'Saira', sans-serif;  color: #b5caff"></div></div>
+  <i class="material-icons" style="font-size: 50px; float: right; position: absolute; right:2px; padding-left:10px; top:1px; color: #fff">
           <div class="arrow"></div>
-      </i>  
+      </i>
       <style>
       .arrow::before{
         content: "keyboard_arrow_right";
       }
-      </style>  
+      </style>
     </div>
   </div>
   <div class="page-header clear-filter">
@@ -136,30 +134,30 @@
   <script>
       // Set the date we're counting down to
       var countDownDate = new Date("May 1, 2019 00:00:00").getTime();
-      
+
       // Update the count down every 1 second
       var x = setInterval(function() {
-      
+
         // Get todays date and time
         var now = new Date().getTime();
-          
+
         // Find the distance between now and the count down date
         var distance = countDownDate - now;
-          
+
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
+
         // Output the result in an element with id="demo"
         document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-          
-        // If the count down is over, write some text 
+        + minutes + "m " + seconds + "s &nbsp;&nbsp;";
+
+        // If the count down is over, write some text
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("demo").innerHTML = "<h3>Web site is launching!</h3>";
+          document.getElementById("demo").innerHTML = "<h4>Web site is launching!</h4>";
         }
       }, 1000);
   </script>

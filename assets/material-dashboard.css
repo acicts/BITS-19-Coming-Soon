@@ -17955,16 +17955,6 @@ Copyright (c) 2015 Daniel Eden
   .nav-open .menu-on-left .main-panel {
     position: initial;
   }
-  .comes{
-    left:-300px !important;
-    transition: 1s;
-  }
-  .comes:hover{
-    left:-10px !important;
-  }
-  #linksleft{
-    float:none !important;
-  }
   html,
   body {
     overflow-x: hidden;
