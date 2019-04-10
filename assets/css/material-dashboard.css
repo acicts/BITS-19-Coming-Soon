@@ -17987,8 +17987,9 @@ top:-30px;
   .logo-bits{
     max-width: 150px;
     max-height:150px;
-    top: 10px !important;
-    left: 20px !important;
+    top: -10px !important;
+    left: 10px !important;
+    position: absolute;
     transition: 1s;
   }
   .secyear{
