@@ -18373,7 +18373,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .dark-edition .form-control {
-    color: #fff
+    color: transparent;
 }
 
 .dark-edition .form-control::-moz-placeholder {

@@ -51,10 +51,11 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <div class="card comes" id="" style="width:40%; position: absolute; bottom:40px; left:-10px; transition: 1s; z-index: 5;">
+  <div class="card comesold" id="" style="width:30%; position: absolute; bottom:20px; left:-10px; transition: 1s; z-index: 5;">
     <div class="card-body">
       <h4 class="card-title"  style="color: #b5caff">Coming Soon</h4>
-      <div class="card-text" style="font-size:200%;"><div id="demo" style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;"></div></div>
+      <!--div class="card-text" style="font-size:200%;"><div id="" style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;"></div></div-->
+    <div style="width:80%">  Due to recent events occurring throughout the country, We have decided to postpone the BITS Competition. New Date of Commencement is yet to be decided. <br/><b>Await further notice!</b></div>
   <i class="material-icons" style="font-size: 50px; position: absolute; right:0%; top:1px; color: #fff">
           <div class="arrow"></div>
       </i>
@@ -78,8 +79,7 @@
           <h6 style="background-color: rgba(255, 5, 5, 0.404); font-family:'Saira', sans-serif; padding: 5px; margin:auto; z-index: -1; width:300px;" class="secyear">Second Consecutive Year</h6>
           <h3 class="description" style="font-family:'Saira', sans-serif; color: #b5caff; text-shadow:-4px 1px 20px black;">The Task Based Online<br>Intra-School ICT Competiton</h3>
 
-          <br/>
-          <a href="" class="btn btn-round btn-lg" style="background-color: rgba(71, 123, 255, 1); text-shadow:0px 0px 20px black;">Await, it's coming soon!</a>
+          <a href="" class="btn btn-round btn-md" style="background-color: rgba(71, 123, 255, 1); text-shadow:0px 0px 20px black;">Await, it's coming soon!</a>
         </div>
       </div>
     </div>
@@ -105,7 +105,44 @@
           </li-->
         </ul>
       </nav>
-      <div class="copyright float-right"  style="color: #b5caff">
+
+
+        <div class="card comes"
+          style="width:20%; position: fixed; bottom:35px; right:30px; transition: 1s; z-index: 5; background-color: #000;">
+          <div class="card-body">
+            <img src="./assets/img/candle.gif" width="100%" style="opacity:0.4">
+            <br/><br/>
+            <h6 class="card-title not-reg" style="color: #b5caff">We strongly condemn the violent and cruel terror that hundreds of innocent people had to go
+                through on the 21<sup>st</sup> of April on Easter Sunday in Sri Lanka and truly mourn the
+                loss of all the people who lost their lives and their loved ones.<br/><br/><b><big>BITS OC<br/>- ACICTS -</big></b></h6>
+
+          </div>
+        </div>
+      <style>
+
+        .arrow::before{
+          content: "keyboard_arrow_right";
+        }
+        .comesold:hover{
+          left:10px !important;
+        }
+
+        /*          Changes for small display      */
+        @media (max-width: 700px) {
+          .comesold{
+            width:90% !important;
+            left:-75% !important;
+          }
+        }
+        @media (max-width: 991px) {
+          .comesold:hover{
+            left:10px !important;
+          }
+        }
+      </style>
+
+      <script src="https://embed.small.chat/THVNC49UHGJ4700NF8.js" async></script>
+      <div class="copyright float-right"  style="color: #b5caff; margin-bottom:8px;">
           &copy;
           <script>
             document.write(new Date().getFullYear())
