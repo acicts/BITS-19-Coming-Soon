@@ -18090,11 +18090,8 @@ z-index: 5;
     height: 100px;
     overflow: hidden;
   }
-  .comes .not-reg{
-    margin-top: 40px;
-  }
   .comes:hover{
-    height:85% !important;
+    height:50% !important;
     bottom:10px !important;
   }
   .comes .not-reg:hover{

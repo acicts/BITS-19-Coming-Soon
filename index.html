@@ -55,7 +55,9 @@
     <div class="card-body">
       <h4 class="card-title"  style="color: #b5caff">Coming Soon</h4>
       <!--div class="card-text" style="font-size:200%;"><div id="" style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;"></div></div-->
-    <div style="width:80%">  Due to recent events occurring throughout the country, We have decided to postpone the BITS Competition. New Date of Commencement is yet to be decided. <br/><b>Await further notice!</b></div>
+    <div style="width:80%" id="pc-card">  Due to recent events occurring throughout the country, We have decided to postpone the BITS Competition. New Date of Commencement is yet to be decided. <br/><b>Await further notice!</b></div>
+    <marquee ><div style="width:80%" id="mobile-card">  Due to recent events occurring throughout the country, We have decided to postpone the BITS Competition. New Date of Commencement is yet to be decided.<b> Await further notice!</b></div>
+    </marquee>
   <i class="material-icons" style="font-size: 50px; position: absolute; right:0%; top:1px; color: #fff">
           <div class="arrow"></div>
       </i>
@@ -112,10 +114,14 @@
           <div class="card-body">
             <img src="./assets/img/candle.gif" width="100%" style="opacity:0.4">
             <br/><br/>
-            <h6 class="card-title not-reg" style="color: #b5caff">We strongly condemn the violent and cruel terror that hundreds of innocent people had to go
+            <h6 class="card-title not-reg" id="pc-card" style="color: #b5caff">We strongly condemn the violent and cruel terror that hundreds of innocent people had to go
                 through on the 21<sup>st</sup> of April on Easter Sunday in Sri Lanka and truly mourn the
                 loss of all the people who lost their lives and their loved ones.<br/><br/><b><big>BITS OC<br/>- ACICTS -</big></b></h6>
-
+<marquee direction="up">
+            <h6 class="card-title not-reg" id="mobile-card" style="color: #b5caff; text-align:center;">We strongly condemn the violent and cruel terror that hundreds of innocent people had to go
+                through on the 21<sup>st</sup> of April on Easter Sunday in Sri Lanka and truly mourn the
+                loss of all the people who lost their lives and their loved ones.<br/><br/><b><big>BITS OC<br/>- ACICTS -</big></b></h6>
+                </marquee>
           </div>
         </div>
       <style>
@@ -126,7 +132,9 @@
         .comesold:hover{
           left:10px !important;
         }
-
+        #mobile-card{
+          display: none;
+        }
         /*          Changes for small display      */
         @media (max-width: 700px) {
           .comesold{
@@ -137,6 +145,20 @@
         @media (max-width: 991px) {
           .comesold:hover{
             left:10px !important;
+          }
+        }
+        @media (max-width: 500px) {
+          #mobile-card{
+            display: block !important;
+          }
+          .comes{
+            opacity: 0.5;
+          }
+          .comes:hover{
+            opacity: 1;
+          }
+          #pc-card{
+            display: none;
           }
         }
       </style>
